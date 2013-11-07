@@ -30,7 +30,7 @@ def make_get_address_family():
         log.msg('Resolving address family of FD %d' % fd)
 
         fd_ = ctypes.c_int(fd)
-        addr = ctypes.c_short(0)
+        addr = ctypes.c_ushort(0)
         len_ = ctypes.c_int(ctypes.sizeof(addr))
 
         ctypes.set_errno(0)
